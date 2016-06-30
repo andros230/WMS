@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/sh_scan_outN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收货人: "
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打包线: "
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/sh_scan_desk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打包人: "
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/sh_scan_packN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="请扫描台位或运单号"
+        android:singleLine="true">
+
+        <requestFocus/>
+    </EditText>
+
+    <ScrollView
+        android:id="@+id/sh_scan_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/sh_scan_showText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </TextView>
+    </ScrollView>
+
+</LinearLayout>
